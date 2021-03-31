@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-size: 16px;
+  font-family: "Karla", sans-serif;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(204, 43%, 93%);
+}
+
+.container {
+  width: 55%;
+  margin: 30px 15px;
+  background-color: #fff;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  box-shadow: 5px 5px 20px 2px hsl(218deg 22% 67% / 40%);
+}
+
+.row {
+  margin: 35px;
+  grid-column: 1 / span 2;
+}
+
+.row h1 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: hsl(179, 62%, 43%);
+  margin-bottom: 15px;
+}
+
+.row h2 {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: hsl(71, 73%, 54%);
+  margin-bottom: 15px;
+}
+
+.row p {
+  font-weight: 400;
+  font-size: 1rem;
+  color: hsl(218, 22%, 67%);
+}
+
+.column1,
+.column2 {
+  padding: 35px;
+}
+
+.column1 h2,
+.column2 h2 {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+.column1 h3 {
+  font-size: 1.6rem;
+  margin-bottom: 5px;
+}
+
+.column1 p {
+  font-size: 0.8rem;
+  margin-bottom: 20px;
+}
+
+.column1 button {
+  width: 100%;
+  border: none;
+  padding: 15px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  background-color: hsl(71, 73%, 54%);
+  color: #fff;
+  cursor: pointer;
+}
+
+.column1 button:focus {
+  outline: none;
+}
+
+.column1 span {
+  margin-left: 5px;
+  font-size: 0.8rem;
+  color: hsl(204, 43%, 93%);
+  font-weight: 400;
+}
+
+.column1 {
+  background-color: hsl(179, 62%, 40%);
+  color: #fff;
+  border-bottom-left-radius: 10px;
+}
+
+.column2 {
+  background-color: hsl(179, 62%, 43%);
+  color: #fff;
+  border-bottom-right-radius: 10px;
+}
+
+.column2 p {
+  font-size: 0.8rem;
+  color: hsl(204, 43%, 93%);
+  width: 70%;
+}
+
+@media (max-width: 767px) {
+  .container {
+    width: 80%;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  main {
+    height: auto;
+  }
+
+  .column1 {
+    border-bottom-left-radius: 0;
+  }
+
+  .column2 {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  .row {
+    grid-column: auto;
+  }
+}
