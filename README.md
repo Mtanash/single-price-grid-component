@@ -4,7 +4,7 @@ This is a solution to the [Social proof section challenge on Frontend Mentor](ht
 
 ---
 
-live preview ==> [click here](https://four-card-feature-section-mtanash.netlify.app/)
+live preview ==> [click here](https://mtanash-single-price-grid-component.netlify.app/)
 
 ---
 
